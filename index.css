@@ -1,0 +1,292 @@
+/*
+    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+*/
+
+/*Version mobile*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    margin: 0 auto;
+    line-height: 1.615;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 170px;
+}
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.15rem;
+    color: #000000;
+    letter-spacing: .5rem;
+    margin-bottom: 20px;
+}
+.navigation a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+    position: relative;
+}
+.navigation a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #898484;
+    opacity: 0;
+    transition: .3s;
+}
+.navigation a:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+/*section article*/
+
+.description {
+    margin: 0 15px;
+}
+.article {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 80px;
+    max-width: 1200px;
+}
+.article h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    margin: 40px 0 10px 0;
+    text-transform: uppercase;
+    color: #B4AD9E;
+}
+.article h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.article p {
+    margin-bottom: 30px;
+}
+.article a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #B4AD9E;
+}
+.picture {
+    margin-top: 32px;
+}
+.button {
+    text-transform: uppercase;
+}
+.article_items {
+    margin-bottom: 40px;
+}
+.article_items .description  h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #B4AD9E;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.article_items .description  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.article_picture {
+    text-align: center;
+}
+.newsletter {
+    background: #F0F0F0;
+    max-width: 1536px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.newsletter h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #333333;
+    padding-bottom: 25px;
+}
+.newsletter input {
+    border: none;
+    border-bottom: 1px solid #333333;
+    background-color: #F0F0F0;
+}
+.signup_button:after {
+    content: ' ►';
+    display: inline-block;
+}
+.more {
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+}
+.more a:hover {
+    background-color: #F0F0F0;
+}
+.more a {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.42rem;
+    border: 1px solid #626262;
+    padding: 16px 30px;
+    transition: .3s;
+}
+.footer {
+    margin-top: auto;
+    padding-top: 30px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F0F0F0;
+    padding: 30px 10px;
+    color: #000000;
+}
+.conditions {
+    display: flex;
+    flex-direction: column;
+}
+.icons p {
+    margin-bottom: 4px;
+}
+
+
+
+@media only screen and (min-width: 870px) {
+    .body {
+        width: 1200px;
+        line-height: 1.715;
+        margin: 0 auto;
+    }
+    .header {
+        margin-top: 58px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        margin: 0;
+    }
+    .navigation a {
+        margin-bottom: 0;
+        margin-right: 0px;
+        margin-left: 95px;
+    }
+    .article .description {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .article {
+        margin-bottom: 120px;
+    }
+    .article h2 {
+        font-size: 2.15rem;
+        margin-bottom: 30px;
+    }
+    .article h3 {
+        margin: 90px 0 15px 0;
+    }
+    .article p {
+        margin-bottom: 40px;
+    }
+    .picture img {
+        width: 100%
+    }
+    .first {
+        display: flex;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    .article_items {
+        width: 50%;
+        text-align: center;
+
+    }
+    .article_items:first-child {
+        margin-right: 40px;
+    }
+    .article_items .description {
+        text-align: left;
+        margin-left: 0;
+    }
+    .article_picture {
+        display: block;
+    }
+    .article_picture img {
+        width: 100%;
+    }
+    .article_items .description  h2 {
+        font-size: 2rem;
+    }
+    .article_items .description p {
+        margin-bottom: 0;
+    }
+    .newsletter {   
+        margin-bottom: 100px;
+    }
+    .newsletter h2 {
+        padding-bottom: 45px;
+        font-size: 2.15rem;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .conditions {
+        flex-direction: row;
+    }
+    .conditions a {
+        margin-right: 16px;
+    }
+    .icons {
+        display: flex;
+    }
+    .icons p {
+        margin-right: 20px;
+    }
+}
